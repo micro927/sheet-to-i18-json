@@ -1,5 +1,5 @@
 import UploadInput from '../components/uploadInput';
-import JsonCodeBlock from '../components/JsonCodeBlock';
+import CodeBlockJson from '../components/codeBlockJson';
 import useViewModel from './viewModel';
 
 function App() {
@@ -11,8 +11,8 @@ function App() {
         <UploadInput setDe={setDe} setEn={setEn} />
       </div>
       <div className="mt-5 flex gap-4">
-        <JsonCodeBlock title="German (de.json)" jsonObject={de} />
-        <JsonCodeBlock title="English (en.json)" jsonObject={en} />
+        <CodeBlockJson title="German (de.json)" jsonObject={de} />
+        <CodeBlockJson title="English (en.json)" jsonObject={en} />
       </div>
     </div>
   );

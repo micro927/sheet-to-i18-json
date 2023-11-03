@@ -38,10 +38,9 @@ function useViewModel({
     if (file) {
       setIsUploaded(true);
       if (validateFile(file)) {
-        const data = await xlsxFileToI18Json(file);
+        const data = await xlsxFileToI18Json(file, setIsError);
         if (data) {
           const { dataDe, dataEn } = data;
-          console.log(dataDe, dataEn);
           setDe(dataDe);
           setEn(dataEn);
           setIsError(false);

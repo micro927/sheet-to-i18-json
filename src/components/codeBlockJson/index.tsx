@@ -3,7 +3,7 @@ import { dracula } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 import { DataJson } from '../../type';
 import useViewModel from './viewModel';
 
-function JsonCodeBlock({
+function CodeBlockJson({
   title,
   jsonObject,
 }: {
@@ -33,4 +33,4 @@ function JsonCodeBlock({
   );
 }
 
-export default JsonCodeBlock;
+export default CodeBlockJson;
